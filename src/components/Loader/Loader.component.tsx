@@ -1,7 +1,6 @@
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
-import LoaderComponent from "./LoaderComponent.component";
 
 const Loader = ({
   children,
@@ -15,7 +14,17 @@ const Loader = ({
     return () => clearTimeout(timer);
   }, []);
 
-  return <>{loading ? <LoaderComponent /> : children}</>;
+  return (
+    <>
+      {loading ? (
+        <div className="flex h-screen items-center justify-center bg-white dark:bg-dark">
+          <div className="h-16 w-16 animate-spin rounded-full border-4 border-solid border-primary border-t-transparent" />
+        </div>
+      ) : (
+        children
+      )}
+    </>
+  );
 };
 
 export default Loader;
