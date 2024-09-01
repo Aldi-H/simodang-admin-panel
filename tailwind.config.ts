@@ -6,331 +6,241 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  // darkMode: "class",
   theme: {
     extend: {
       colors: {
-        current: "currentColor",
-        transparent: "transparent",
-        white: "#FFFFFF",
-        primary: "#5750F1",
-        stroke: "#E6EBF1",
-        "stroke-dark": "#27303E",
-        dark: {
-          DEFAULT: "#111928",
-          2: "#1F2A37",
-          3: "#374151",
-          4: "#4B5563",
-          5: "#6B7280",
-          6: "#9CA3AF",
-          7: "#D1D5DB",
-          8: "#E5E7EB",
-        },
-        gray: {
-          DEFAULT: "#EFF4FB",
-          dark: "#122031",
-          1: "#F9FAFB",
-          2: "#F3F4F6",
-          3: "#E5E7EB",
-          4: "#D1D5DB",
-          5: "#9CA3AF",
-          6: "#6B7280",
-          7: "#374151",
-        },
-        green: {
-          DEFAULT: "#22AD5C",
-          dark: "#1A8245",
+        schemesColors: {
           light: {
-            DEFAULT: "#2CD673",
-            1: "#10B981",
-            2: "#57DE8F",
-            3: "#82E6AC",
-            4: "#ACEFC8",
-            5: "#C2F3D6",
-            6: "#DAF8E6",
-            7: "#E9FBF0",
+            primary: "#485D92",
+            onPrimary: "#FFFFFF",
+            primaryContainer: "#DAE2FF",
+            onPrimaryContainer: "#001947",
+            secondary: "#585E71",
+            onSecondary: "#FFFFFF",
+            secondaryContainer: "#DCE2F9",
+            onSecondaryContainer: "#151B2C",
+            tertiary: "#735572",
+            onTertiary: "#FFFFFF",
+            tertiaryContainer: "#FED7F9",
+            onTertiaryContainer: "#2A122C",
+            error: "#BA1A1A",
+            onError: "#FFFFFF",
+            errorContainer: "#FFDAD6",
+            onErrorContainer: "#410002",
+            background: "#FEF7FF",
+            onBackground: "#1D1B20",
+            surface: "#F6F5F4",
+            onSurface: "#1C1B1C",
+            surfaceVariant: "#F2F2F1",
+            onSurfaceVariant: "#484647",
+            outline: "#797677",
+            outlineVariant: "#C9C5C6",
+            surfaceTint: "#AD8257",
+            shadow: "#000000",
+            scrim: "#000000",
+            inverseSurvace: "#322F35",
+            inverseOnSurvace: "#F4F0EF",
+            inversePrimary: "#B1C5FF",
+            surfaceDim: "#E8E8E8",
+            surfaceBright: "#FDFDFD",
+            surfaceContainerLowest: "#FFFFFF",
+            surfaceContainerLow: "#F8F8F8",
+            surfaceContainer: "#EFEFEF",
+            surfaceContainerHigh: "#E8E8E8",
+            surfaceContainerHighest: "#E1E1E1",
           },
-        },
-        red: {
-          DEFAULT: "#F23030",
-          dark: "#E10E0E",
-          light: {
-            DEFAULT: "#F56060",
-            2: "#F89090",
-            3: "#FBC0C0",
-            4: "#FDD8D8",
-            5: "#FEEBEB",
-            6: "#FEF3F3",
-          },
-        },
-        blue: {
-          DEFAULT: "#3C50E0",
-          dark: "#1C3FB7",
-          light: {
-            DEFAULT: "#5475E5",
-            2: "#8099EC",
-            3: "#ADBCF2",
-            4: "#C3CEF6",
-            5: "#E1E8FF",
-          },
-        },
-        orange: {
-          light: {
-            DEFAULT: "#F59460",
-          },
-        },
-        yellow: {
           dark: {
-            DEFAULT: "#F59E0B",
-            2: "#D97706",
+            primary: "#B1C5FF",
+            onPrimary: "#172E60",
+            primaryContainer: "#304578",
+            onPrimaryContainer: "#DAE2FF",
+            secondary: "#C0C6DC",
+            onSecondary: "#2A3042",
+            secondaryContainer: "#404659",
+            onSecondaryContainer: "#DCE2F9",
+            tertiary: "#E0BBDD",
+            onTertiary: "#412742",
+            tertiaryContainer: "#593D59",
+            onTertiaryContainer: "#FED7F9",
+            error: "#FFB4AB",
+            onError: "#690005",
+            errorContainer: "#93000A",
+            onErrorContainer: "#FFDAD6",
+            background: "#141218",
+            onBackground: "#E6E0E9",
+            surface: "#121318",
+            onSurface: "#E2E2E9",
+            surfaceVariant: "#25262B",
+            onSurfaceVariant: "#CAC4D0",
+            outline: "#8F9099",
+            outlineVariant: "#44464F",
+            surfaceTint: "#465188",
+            shadow: "#000000",
+            scrim: "#000000",
+            inverseSurvace: "#E2E2E9",
+            inverseOnSurvace: "#2F3036",
+            inversePrimary: "#485D92",
+            surfaceDim: "#121318",
+            surfaceBright: "#38393F",
+            surfaceContainerLowest: "#0D0E13",
+            surfaceContainerLow: "#1A1B21",
+            surfaceContainer: "#1E1F25",
+            surfaceContainerHigh: "#282A2F",
+            surfaceContainerHighest: "#33343A",
           },
-          light: {
-            DEFAULT: "#FCD34D",
-            4: "#FFFBEB",
+          fixed: {
+            primaryFixed: "#B1C5FF",
+            onPrimaryFixed: "#001947",
+            primaryFixedDim: "#B1C5FF",
+            onPrimaryFixedVariant: "#304578",
+            secondaryFixed: "#DCE2F9",
+            onSecondaryFixed: "#151B2C",
+            secondaryFixedDim: "#C0C6DC",
+            onSecondaryFixedVariant: "#404659",
+            tertiaryFixed: "#FED7F9",
+            onTertiaryFixed: "#2A122C",
+            tertiaryFixedDim: "#E0BBDD",
+            onTertiaryFixedVariant: "#593D59",
           },
         },
-      },
-      fontSize: {
-        "heading-1": ["60px", "72px"],
-        "heading-2": ["48px", "58px"],
-        "heading-3": ["40px", "48px"],
-        "heading-4": ["35px", "45px"],
-        "heading-5": ["28px", "40px"],
-        "heading-6": ["24px", "30px"],
-        "body-2xlg": ["22px", "28px"],
-        "body-sm": ["14px", "22px"],
-        "body-xs": ["12px", "20px"],
-      },
-      spacing: {
-        4.5: "1.125rem",
-        5.5: "1.375rem",
-        6.5: "1.625rem",
-        7.5: "1.875rem",
-        8.5: "2.125rem",
-        9.5: "2.375rem",
-        10.5: "2.625rem",
-        11: "2.75rem",
-        11.5: "2.875rem",
-        12.5: "3.125rem",
-        13: "3.25rem",
-        13.5: "3.375rem",
-        14: "3.5rem",
-        14.5: "3.625rem",
-        15: "3.75rem",
-        15.5: "3.875rem",
-        16: "4rem",
-        16.5: "4.125rem",
-        17: "4.25rem",
-        17.5: "4.375rem",
-        18: "4.5rem",
-        18.5: "4.625rem",
-        19: "4.75rem",
-        19.5: "4.875rem",
-        21: "5.25rem",
-        21.5: "5.375rem",
-        22: "5.5rem",
-        22.5: "5.625rem",
-        24.5: "6.125rem",
-        25: "6.25rem",
-        25.5: "6.375rem",
-        26: "6.5rem",
-        27: "6.75rem",
-        27.5: "6.875rem",
-        28.5: "7.125rem",
-        29: "7.25rem",
-        29.5: "7.375rem",
-        30: "7.5rem",
-        31: "7.75rem",
-        32.5: "8.125rem",
-        33: "8.25rem",
-        34: "8.5rem",
-        34.5: "8.625rem",
-        35: "8.75rem",
-        36.5: "9.125rem",
-        37.5: "9.375rem",
-        39: "9.75rem",
-        39.5: "9.875rem",
-        40: "10rem",
-        42.5: "10.625rem",
-        44: "11rem",
-        45: "11.25rem",
-        46: "11.5rem",
-        46.5: "11.625rem",
-        47.5: "11.875rem",
-        49: "12.25rem",
-        50: "12.5rem",
-        52: "13rem",
-        52.5: "13.125rem",
-        54: "13.5rem",
-        54.5: "13.625rem",
-        55: "13.75rem",
-        55.5: "13.875rem",
-        59: "14.75rem",
-        60: "15rem",
-        62.5: "15.625rem",
-        65: "16.25rem",
-        67: "16.75rem",
-        67.5: "16.875rem",
-        70: "17.5rem",
-        72.5: "18.125rem",
-        73: "18.25rem",
-        75: "18.75rem",
-        90: "22.5rem",
-        94: "23.5rem",
-        95: "23.75rem",
-        100: "25rem",
-        103: "25.75rem",
-        115: "28.75rem",
-        125: "31.25rem",
-        132.5: "33.125rem",
-        150: "37.5rem",
-        171.5: "42.875rem",
-        180: "45rem",
-        187.5: "46.875rem",
-        203: "50.75rem",
-        230: "57.5rem",
-        242.5: "60.625rem",
-      },
-      maxWidth: {
-        2.5: "0.625rem",
-        3: "0.75rem",
-        4: "1rem",
-        7: "1.75rem",
-        9: "2.25rem",
-        10: "2.5rem",
-        10.5: "2.625rem",
-        11: "2.75rem",
-        13: "3.25rem",
-        14: "3.5rem",
-        15: "3.75rem",
-        16: "4rem",
-        22.5: "5.625rem",
-        25: "6.25rem",
-        30: "7.5rem",
-        34: "8.5rem",
-        35: "8.75rem",
-        40: "10rem",
-        42.5: "10.625rem",
-        44: "11rem",
-        45: "11.25rem",
-        46.5: "11.625rem",
-        60: "15rem",
-        70: "17.5rem",
-        90: "22.5rem",
-        94: "23.5rem",
-        100: "25rem",
-        103: "25.75rem",
-        125: "31.25rem",
-        132.5: "33.125rem",
-        142.5: "35.625rem",
-        150: "37.5rem",
-        180: "45rem",
-        203: "50.75rem",
-        230: "57.5rem",
-        242.5: "60.625rem",
-        270: "67.5rem",
-        280: "70rem",
-        292.5: "73.125rem",
-      },
-      maxHeight: {
-        35: "8.75rem",
-        70: "17.5rem",
-        90: "22.5rem",
-        550: "34.375rem",
-        300: "18.75rem",
-      },
-      minWidth: {
-        22.5: "5.625rem",
-        42.5: "10.625rem",
-        47.5: "11.875rem",
-        75: "18.75rem",
-      },
-      zIndex: {
-        999999: "999999",
-        99999: "99999",
-        9999: "9999",
-        999: "999",
-        99: "99",
-        9: "9",
-        1: "1",
-      },
-      opacity: {
-        65: ".65",
-      },
-      aspectRatio: {
-        "4/3": "4 / 3",
-        "21/9": "21 / 9",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      keyframes: {
-        linspin: {
-          "100%": { transform: "rotate(360deg)" },
+        system_light: {
+          primary: "#485D92",
+          secondary: "#585E71",
+          tertiary: "#735572",
+          error: "#93000A",
+          outline: "#797677",
+          background: "#FEF7FF",
+          surface: "#FAF8FF",
+          "inverse-primary": "#B1C5FF",
+          shadow: "#000000",
+          "surface-tint": "#6750A4",
+          "outline-variant": "#C9C5C6",
+          scrim: "#000000",
         },
-        easespin: {
-          "12.5%": { transform: "rotate(135deg)" },
-          "25%": { transform: "rotate(270deg)" },
-          "37.5%": { transform: "rotate(405deg)" },
-          "50%": { transform: "rotate(540deg)" },
-          "62.5%": { transform: "rotate(675deg)" },
-          "75%": { transform: "rotate(810deg)" },
-          "87.5%": { transform: "rotate(945deg)" },
-          "100%": { transform: "rotate(1080deg)" },
+        system_dark: {
+          primary: "#B1C5FF",
+          secondary: "#CCC2DC",
+          tertiary: "#EFB8C8",
+          error: "#F2B8B5",
+          outline: "#938F99",
+          background: "#141218",
+          surface: "#141218",
+          "inverse-primary": "#6750A4",
+          shadow: "#000000",
+          "surface-tint": "#D0BCFF",
+          "outline-variant": "#49454F",
+          scrim: "#000000",
         },
-        "left-spin": {
-          "0%": { transform: "rotate(130deg)" },
-          "50%": { transform: "rotate(-5deg)" },
-          "100%": { transform: "rotate(130deg)" },
-        },
-        "right-spin": {
-          "0%": { transform: "rotate(-130deg)" },
-          "50%": { transform: "rotate(5deg)" },
-          "100%": { transform: "rotate(-130deg)" },
-        },
-        rotating: {
-          "0%, 100%": { transform: "rotate(360deg)" },
-          "50%": { transform: "rotate(0deg)" },
-        },
-        topbottom: {
-          "0%, 100%": { transform: "translate3d(0, -100%, 0)" },
-          "50%": { transform: "translate3d(0, 0, 0)" },
-        },
-        bottomtop: {
-          "0%, 100%": { transform: "translate3d(0, 0, 0)" },
-          "50%": { transform: "translate3d(0, -100%, 0)" },
-        },
-        line: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(100%)" },
-        },
-        "line-revert": {
-          "0%, 100%": { transform: "translateY(100%)" },
-          "50%": { transform: "translateY(0)" },
-        },
-      },
-      animation: {
-        linspin: "linspin 1568.2353ms linear infinite",
-        easespin: "easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both",
-        "left-spin":
-          "left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both",
-        "right-spin":
-          "right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both",
-        "ping-once": "ping 5s cubic-bezier(0, 0, 0.2, 1)",
-        rotating: "rotating 30s linear infinite",
-        topbottom: "topbottom 60s infinite alternate linear",
-        bottomtop: "bottomtop 60s infinite alternate linear",
-        "spin-1.5": "spin 1.5s linear infinite",
-        "spin-2": "spin 2s linear infinite",
-        "spin-3": "spin 3s linear infinite",
-        line1: "line 10s infinite linear",
-        line2: "line-revert 8s infinite linear",
-        line3: "line 7s infinite linear",
       },
     },
   },
   plugins: [],
 };
+/*
+  All hex value from 100% to 0% alpha:
+sample
+
+100% — FF
+99% — FC
+98% — FA
+97% — F7
+96% — F5
+95% — F2
+94% — F0
+93% — ED
+92% — EB
+91% — E8
+90% — E6
+89% — E3
+88% — E0
+87% — DE
+86% — DB
+85% — D9
+84% — D6
+83% — D4
+82% — D1
+81% — CF
+80% — CC
+79% — C9
+78% — C7
+77% — C4
+76% — C2
+75% — BF
+74% — BD
+73% — BA
+72% — B8
+71% — B5
+70% — B3
+69% — B0
+68% — AD
+67% — AB
+66% — A8
+65% — A6
+64% — A3
+63% — A1
+62% — 9E
+61% — 9C
+60% — 99
+59% — 96
+58% — 94
+57% — 91
+56% — 8F
+55% — 8C
+54% — 8A
+53% — 87
+52% — 85
+51% — 82
+50% — 80
+49% — 7D
+48% — 7A
+47% — 78
+46% — 75
+45% — 73
+44% — 70
+43% — 6E
+42% — 6B
+41% — 69
+40% — 66
+39% — 63
+38% — 61
+37% — 5E
+36% — 5C
+35% — 59
+34% — 57
+33% — 54
+32% — 52
+31% — 4F
+30% — 4D
+29% — 4A
+28% — 47
+27% — 45
+26% — 42
+25% — 40
+24% — 3D
+23% — 3B
+22% — 38
+21% — 36
+20% — 33
+19% — 30
+18% — 2E
+17% — 2B
+16% — 29
+15% — 26
+14% — 24
+13% — 21
+12% — 1F
+11% — 1C
+10% — 1A
+9% — 17
+8% — 14
+7% — 12
+6% — 0F
+5% — 0D
+4% — 0A
+3% — 08
+2% — 05
+1% — 03
+0% — 00
+*/
+
 export default config;
