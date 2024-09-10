@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      ubuntu: ["Ubuntu", "ubuntu"]
+      ubuntu: ["Ubuntu", "ubuntu"],
     },
     extend: {
       colors: {
@@ -149,7 +149,7 @@ const config: Config = {
         "paragraph-lead": "18px",
         "paragraph-default": "14px",
         "paragraph-small": "12px",
-        "caption": "11px",
+        caption: "11px",
         "font-button-large": "16px",
         "font-button": "14px",
         "font-button-small": "12px",
@@ -163,8 +163,8 @@ const config: Config = {
         "font-form-placeholder": "14px",
         "font-form-placeholder-sm": "12",
         "font-table-header": "13px",
-        "menu": "14px"
-      }
+        menu: "14px",
+      },
     },
   },
   plugins: [],
