@@ -14,7 +14,7 @@ const config: Config = {
       colors: {
         schemesColors: {
           light: {
-            primary: "#485D92",
+            primary: "#040404",
             onPrimary: "#FFFFFF",
             primaryContainer: "#282828",
             onPrimaryContainer: "#B5B3B3",
