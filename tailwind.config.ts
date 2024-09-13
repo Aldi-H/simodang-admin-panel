@@ -10,6 +10,7 @@ const config: Config = {
     fontFamily: {
       ubuntu: ["Ubuntu", "ubuntu"],
     },
+    darkMode: "class",
     extend: {
       colors: {
         schemesColors: {
@@ -133,6 +134,14 @@ const config: Config = {
           "surface-tint": "#D0BCFF",
           "outline-variant": "#49454F",
           scrim: "#000000",
+        },
+      },
+      borderColor: {
+        light: {
+          primary: "#040404",
+          secondary: "#745941",
+          tertiary: "#944A00",
+          error: "#BA1A1A",
         },
       },
       fontSize: {
